@@ -1,3 +1,14 @@
+/* CUSTOM PROPERTIES */
+:root {
+  --body-bg: #fff;
+  --nav-color: #263238;
+  --text-color:#8f95a5;
+  --btn-color: #263238;
+  --btn-cost-bgcolor: #eee;
+  --grid-card-bg: #f5f5f5;
+}
+
+
 /* GLOBAL */
 html {
   box-sizing: border-box;
@@ -42,5 +53,5 @@ img {
 
 /* MAIN-CONTENT */
 .main-content {
-flex-grow: 1;
+  flex-grow: 1;
 }
