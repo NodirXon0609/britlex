@@ -77,6 +77,31 @@ img {
   outline-offset: 3px;
 }
 
+/* BUTTON */
+.btn {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/* MAIN-BUTTON */
+.main-btn {
+  display: inline-block;
+  background-color: var(--btn-color);
+  border: 2px solid transparent;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #fff;
+  transition: background-color 0.5s ease,
+  color 0.5s ease, opacity 0.5s ease;
+}
+
+.main-btn:hover {
+  background-color: transparent;
+  border: 2px solid var(--btn-color);
+  color: var(--btn-color);
+}
+
 /* CONTAINER  */
 .container {
   width: 100%;
@@ -86,7 +111,6 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-
 
 /* MAIN-CONTENT */
 .main-content {
@@ -172,8 +196,6 @@ img {
 /* HEADER-BTN-LINK */
 .header-btn-link {
   font-size: 24px;
-  font-weight: 400;
-  text-decoration: none;
   text-transform: capitalize;
   border-bottom: 1px solid transparent;
   transition: border-bottom 0.5s ease;
@@ -188,3 +210,90 @@ img {
   border-bottom: 1px solid var(--text-color);
 }
 /* HEADER-END */
+
+
+/* HERO-BEGIN */
+.hero {
+  padding-top: 46px;
+  padding-bottom: 46px;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-info-wrapper {
+  position: relative;
+}
+
+.hero-heading {
+  font-size: 64px;
+  line-height: 125%;
+  font-weight: 600;
+  width: 100%;
+  max-width: 386px;
+  margin: 0;
+  margin-bottom: 40px;
+  color: #000;
+}
+
+.hero-heading::after {
+  position: absolute;
+  display: flex;
+  background-image: url("../img/light.png");
+  background-size: cover;
+  left: 424px;
+  top: 95px;
+  content: "";
+  width: 85px;
+  height: 85px;
+}
+
+.hero-text {
+  margin: 0;
+  width: 100%;
+  max-width: 570px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 61px;
+}
+
+/* HERO-LINK */
+.hero-btn {
+  font-size: 36px;
+  font-weight: 400;
+  padding: 32px 118px;
+  border-radius: 15px;
+}
+
+.hero-btn::first-letter{
+  text-transform: uppercase;
+}
+
+/* HERO-IMG */
+.hero-img {
+  width: 100%;
+  max-width: 661px;
+  height: 661px;
+  object-fit: cover;
+  margin-top: -50px;
+}
+/* HERO-END */
+
+
+/* RETINA IMAGE */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+  .hero-heading::after {
+    background-image: url("../img/light@2x.png");
+  }
+
+}
