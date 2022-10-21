@@ -174,16 +174,16 @@ img {
 .sitenav-link {
   text-decoration: none;
   color: var(--btn-color);
-  border-bottom: 1px solid transparent;
+  border-bottom: 2px solid transparent;
   transition: border-bottom 0.5s ease;
 }
 
 .sitenav-link:hover {
-  border-bottom: 1px solid var(--btn-color);
+  border-bottom: 2px solid var(--btn-color);
 }
 
 .sitenav-link:active {
-  border-bottom: 1px solid var(--text-color);
+  border-bottom: none;
 }
 
 /* HEADER-BTN-WRAPPER */
