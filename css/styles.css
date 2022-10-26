@@ -208,7 +208,7 @@ img {
 /* HEADER-END */
 
 
-/* HERO-BEGIN */
+/* HERO-SECTION */
 .hero {
   padding-top: 46px;
   padding-bottom: 46px;
@@ -277,7 +277,6 @@ img {
   object-fit: cover;
   margin-top: -50px;
 }
-/* HERO-END */
 
 
 /* MAIN-CONTENT-BEGIN */
@@ -402,7 +401,7 @@ img {
 }
 
 
-/* ABOUT US */
+/* ABOUT US SECTION */
 .about-us {
   padding-top: 195px;
   padding-bottom: 64px;
@@ -477,6 +476,114 @@ img {
   height: 500px;
   max-width: 500px;
   object-fit: cover;
+}
+
+
+/* PRICING SECTION */
+.pricing {
+  padding-top: 124px;
+  padding-bottom: 124px;
+}
+
+.pricing-heading {
+  margin: 0;
+  color: #000;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 167%;
+  text-align: center;
+  margin-bottom: 57px;
+}
+
+.pricing-heading::first-letter {
+  text-transform: uppercase;
+}
+
+.pricing-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pricing-item {
+  width: 100%;
+  display: flex;
+  list-style: none;
+  max-width: 380px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.pricing-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.pricing-item-img {
+  width: 100%;
+  display: flex;
+  object-fit: cover;
+  margin-bottom: auto;
+}
+
+.self-study {
+  max-width: 311px;
+  height: 311px;
+}
+
+.pricing-item-title {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 160%;
+  margin-bottom: 20px;
+  color: var(--btn-color);
+}
+
+.pricing-item-title::first-letter {
+  text-transform: uppercase;
+}
+
+.pricing-item-text {
+  margin: 0;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+.price {
+  display: flex;
+  margin-top: auto;
+  border-radius: 5px;
+  padding-left: 18px;
+  padding-right: 24px;
+  align-items: center;
+  background-color: var(--btn-cost-bgcolor);
+}
+
+.price-sum {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 400;
+  margin-right: 8px;
+  color: var(--btn-color);
+}
+
+.price-per-month {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 400;
+  color: #546269;
+}
+
+.live-online {
+  max-width: 391px;
+  height: 283px;
+}
+
+.personal-tuition {
+  max-width: 311px;
+  height: 280px;
 }
 
 
