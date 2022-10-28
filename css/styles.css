@@ -305,6 +305,7 @@ img {
 .grid-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 18px;
 }
 
 /* GRID-ITEM */
@@ -319,11 +320,6 @@ img {
 .grid-item:first-child {
   grid-row-start: 1;
   grid-row-end: 4;
-  margin-right: 18px;
-}
-
-.grid-item:nth-child(2) {
-  margin-right: 18px;
 }
 
 .grid-item:last-child {
@@ -333,7 +329,6 @@ img {
   flex-direction: row-reverse;
   grid-column-start: 2;
   grid-column-end: 4;
-  margin-top: 20px;
 }
 
 .grid-img-speaking {
