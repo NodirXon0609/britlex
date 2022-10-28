@@ -651,6 +651,7 @@ img {
 }
 
 .contact-form-btn:hover {
+  cursor: pointer;
   border: 2px solid var(--text-color);
 }
 
@@ -682,7 +683,35 @@ img {
   margin-right: 30px;
 }
 
-.site-footer-text {
+.site-footer-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
   font-size: 24px;
   font-weight: 400;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.site-footer-item:first-child {
+  list-style: none;
+}
+
+.site-footer-item:not(:last-child) {
+  margin-right: 35px;
+}
+
+.site-footer-link {
+  text-decoration: none;
+  color: var(--text-color);
+  transition: border-bottom 0.5s ease;
+  border-bottom: 2px solid transparent;
+}
+
+.site-footer-link:hover {
+  border-bottom: 2px solid var(--text-color);
+}
+
+.site-footer-link:active {
+  border-bottom: none;
 }
