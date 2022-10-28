@@ -663,6 +663,35 @@ img {
 /* MAIN-CONTENT-END */
 
 
+/* SITE-FOOTER */
+.site-footer {
+  padding-bottom: 64px;
+}
+
+.site-footer-border {
+  margin: 0;
+  border: none;
+  padding-top: 31px;
+  border-top: 1px solid #c4c4c4;
+}
+
+.site-footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-footer-logo-link {
+  margin-right: 30px;
+}
+
+.site-footer-text {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+
+
 
 /* RETINA IMAGE */
 @media
@@ -676,5 +705,4 @@ only screen and (                min-resolution: 2dppx) {
   .hero-heading::after {
     background-image: url("../img/light@2x.png");
   }
-
 }
