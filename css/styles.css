@@ -319,7 +319,7 @@ img {
 
 .grid-item:first-child {
   grid-row-start: 1;
-  grid-row-end: 4;
+  grid-row-end: 3;
 }
 
 .grid-item:last-child {
