@@ -238,7 +238,7 @@ img {
 .hero-heading::after {
   position: absolute;
   display: flex;
-  background-image: url("../img/light.png");
+  background-image: url("../img/light.svg");
   background-size: cover;
   left: 424px;
   top: 95px;
@@ -348,6 +348,8 @@ img {
   height: 293px;
   object-fit: cover;
   margin-bottom: 5px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .grid-img-reading {
@@ -688,21 +690,4 @@ img {
 .site-footer-text {
   font-size: 24px;
   font-weight: 400;
-}
-
-
-
-
-/* RETINA IMAGE */
-@media
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (   min--moz-device-pixel-ratio: 2),
-only screen and (     -o-min-device-pixel-ratio: 2/1),
-only screen and (        min-device-pixel-ratio: 2),
-only screen and (                min-resolution: 192dpi),
-only screen and (                min-resolution: 2dppx) {
-
-  .hero-heading::after {
-    background-image: url("../img/light@2x.png");
-  }
 }
