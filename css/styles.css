@@ -528,6 +528,13 @@ img {
   height: 311px;
 }
 
+.pricing-item-content {
+  display: flex;
+  min-height: 233px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 .pricing-item-title {
   margin: 0;
   font-size: 30px;
@@ -549,12 +556,16 @@ img {
 }
 
 .price {
+  margin: 0;
   display: flex;
+  font-size: 18px;
   margin-top: auto;
+  font-weight: 400;
+  color: #546269;
   border-radius: 5px;
   padding-left: 18px;
-  padding-right: 24px;
   align-items: center;
+  padding-right: 24px;
   background-color: var(--btn-cost-bgcolor);
 }
 
@@ -566,21 +577,14 @@ img {
   color: var(--btn-color);
 }
 
-.price-per-month {
-  margin: 0;
-  font-size: 18px;
-  font-weight: 400;
-  color: #546269;
-}
-
 .live-online {
   max-width: 391px;
   height: 283px;
 }
 
 .personal-tuition {
-  max-width: 311px;
-  height: 280px;
+  max-width: 340px;
+  height: 340px;
 }
 
 
@@ -698,7 +702,7 @@ img {
 }
 
 .site-footer-item:not(:last-child) {
-  margin-right: 35px;
+  margin-right: 40px;
 }
 
 .site-footer-link {
